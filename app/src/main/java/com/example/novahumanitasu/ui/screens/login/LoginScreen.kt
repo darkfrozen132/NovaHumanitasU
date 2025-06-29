@@ -27,6 +27,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+<<<<<<< Updated upstream
 import com.example.novahumanitasu.R
 import com.example.novahumanitasu.components.AppButton
 import com.example.novahumanitasu.components.ButtonSize
@@ -112,6 +113,23 @@ fun LoginScreen(navController: NavController){
                 size = ButtonSize.LARGE
             )
 
+=======
+import com.example.novahumanitasu.components.PrimaryButton
+
+@Composable
+fun LoginScreen(navController: NavController){
+    Column( 
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(32.dp),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center
+    )
+    {
+        Text("Under Construction")
+        PrimaryButton(text = "Ingresar") {
+            navController.navigate("home")
+>>>>>>> Stashed changes
         }
     }
 

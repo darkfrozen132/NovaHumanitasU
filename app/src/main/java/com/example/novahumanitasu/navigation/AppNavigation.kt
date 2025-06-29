@@ -6,6 +6,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.novahumanitasu.ui.screens.login.LoginScreen
 import com.example.novahumanitasu.ui.screens.login.WelcomeScreen
+import com.example.novahumanitasu.ui.screens.home.HomeScreen
 
 @Composable
 fun AppNavigation(){
@@ -18,6 +19,9 @@ fun AppNavigation(){
         }
         composable("login"){
             LoginScreen(navController)
+        }
+        composable("home"){
+            HomeScreen()
         }
     }
 }
